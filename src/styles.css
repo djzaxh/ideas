@@ -1,0 +1,103 @@
+/* App Container */
+.app-container {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  display: flex;
+  height: 100vh;
+}
+
+.toast {
+  position: fixed;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  opacity: 0.9;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 200px;
+  background-color: #f4f4f4;
+  padding: 20px;
+  border-right: 1px solid #ddd;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.groups-list {
+  margin-top: 20px;
+}
+
+.group-item {
+  padding: 10px;
+  background-color: #e0e0e0;
+  margin: 5px 0;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+}
+
+.profile-pic img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+/* Main Content */
+main {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+h2 {
+  color: #333;
+}
+
+/* Task Input */
+form {
+  margin-top: 20px;
+}
+
+form input[type="text"] {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 20px;
+  border: 1px solid #ddd;
+  width: 80%;
+}
+
+form button {
+  padding: 10px 20px;
+  margin-left: 10px;
+  background-color: #007aff;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+/* Task List */
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  padding: 10px;
+  background-color: #e9e9e9;
+  margin: 5px 0;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+li input[type="checkbox"] {
+  margin-right: 10px;
+}
